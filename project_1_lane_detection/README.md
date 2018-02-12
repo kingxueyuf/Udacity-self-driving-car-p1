@@ -35,7 +35,7 @@ My pipeline consisted of 10 steps.
 ### 2. Identify potential shortcomings with your current pipeline
 
 1. Canny will return not only the lines we need but also lots of other noises
-[image1]: ./examples/canny.png "canny"
+![alt text](./examples/canny.png)
 
 2. HoughLinesP will return not only the lines we need but also lots of other noises which makes the final result always have an offset to the actual result 
 [image1]: ./examples/houghline.png "hough line (by calculate the mean of x1,y1,x2,y2)"
