@@ -36,17 +36,14 @@ My pipeline consisted of 10 steps.
 
 1. Canny will return not only the lines we need but also lots of other noises
 
-canny
 ![alt text](./examples/canny.png)
 
 2. HoughLinesP will return not only the lines we need but also lots of other noises which makes the final result always have an offset to the actual result 
 
-hough line (by calculate the mean of x1,y1,x2,y2):
 ![alt text](./examples/houghline.png)
 
 3. When processing the challenge.mp4, if the frame has a shadow, the result became very inaccurate
 
-"challenge"
 ![alt text](./examples/challenge.jpg)
 
 ### 3. Suggest possible improvements to your pipeline
