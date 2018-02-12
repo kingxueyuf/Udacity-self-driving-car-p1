@@ -5,10 +5,10 @@ In this repository I will share the **source code** of all the projects of **[Ud
 ---
 ## Table of Contents
 
-#### [P1 - Detecting Lane Lines (basic)](project_1_lane_detection)
+#### [P1 - Highway Lane Detection (basic)](project_1_lane_detection)
  - **Summary:** Detected highway lane lines on a video stream. Used OpencV image analysis techniques to identify lines, including 
  1. Grayscale image.
  2. Guassian smooth.
  3. Canny edge detection.
- 4. Hough Transforms
+ 4. Hough Transforms.
  - **Keywords:** Computer Vision
