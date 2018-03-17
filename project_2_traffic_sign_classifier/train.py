@@ -104,7 +104,7 @@ def LeNet(x):
 # ### Train, Validate and Test the Model
 # Hyperparameter
 BATCH_SIZE = 200
-EPOCHS = 2000
+EPOCHS = 10000
 rate = 1e-3
 
 # Placeholder
