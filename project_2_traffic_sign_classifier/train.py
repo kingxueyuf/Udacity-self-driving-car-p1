@@ -1,5 +1,3 @@
-
-
 import pickle
 import numpy as np
 from sklearn.utils import shuffle
@@ -105,7 +103,7 @@ def LeNet(x):
 
 # ### Train, Validate and Test the Model
 # Hyperparameter
-BATCH_SIZE = 40
+BATCH_SIZE = 200
 EPOCHS = 2000
 rate = 1e-3
 
@@ -116,6 +114,8 @@ one_hot_y = tf.one_hot(y, 42)
 
 # Forward
 logits = LeNet(x)
+logits_evaluate = LeNet(x)
+logits_evaluate = tf.nn.softmax(logits_evaluate)
 
 # Loss
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=one_hot_y, logits=logits)
@@ -126,7 +126,7 @@ optimizer = tf.train.AdamOptimizer(learning_rate = rate)
 training_operation = optimizer.minimize(loss)
 
 # Evaluate
-correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(one_hot_y, 1))
+correct_prediction = tf.equal(tf.argmax(logits_evaluate, 1), tf.argmax(one_hot_y, 1))
 accuracy_operation = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
 def evaluate(X_data, y_data):
