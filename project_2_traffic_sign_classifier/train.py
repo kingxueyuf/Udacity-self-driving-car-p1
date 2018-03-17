@@ -43,9 +43,9 @@ print("Number of classes =", n_classes)
 # ## Step 2: Design and Test a Model Architecture
 def normalize_image(images):
     return (images - 128) / 128
-X_train = normalize_image(X_train)
-X_validation = normalize_image(X_validation)
-X_test = normalize_image(X_test)
+# X_train = normalize_image(X_train)
+# X_validation = normalize_image(X_validation)
+# X_test = normalize_image(X_test)
 
 # ### Model Architecture
 def LeNet(x):
