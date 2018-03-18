@@ -93,8 +93,8 @@ def LeNet(x):
         x = tf.nn.relu(x)
 
         # Layer 5: Fully Connected. Input = 84. Output = 42.
-        fc3_w = tf.Variable(tf.truncated_normal(shape=(84,42), mean = mu, stddev = sigma), name = 'fc3_w')
-        fc3_bias = tf.Variable(tf.zeros(42),dtype=tf.float32, name = 'fc3_bias')
+        fc3_w = tf.Variable(tf.truncated_normal(shape=(84,43), mean = mu, stddev = sigma), name = 'fc3_w')
+        fc3_bias = tf.Variable(tf.zeros(43),dtype=tf.float32, name = 'fc3_bias')
         x = tf.matmul(x, fc3_w) + fc3_bias
 
         logits = x
@@ -110,12 +110,10 @@ rate = 1e-3
 # Placeholder
 x = tf.placeholder(tf.float32, (None, 32, 32, 3))
 y = tf.placeholder(tf.int32, (None))
-one_hot_y = tf.one_hot(y, 42)
+one_hot_y = tf.one_hot(y, 43)
 
 # Forward
 logits = LeNet(x)
-logits_evaluate = LeNet(x)
-logits_evaluate = tf.nn.softmax(logits_evaluate)
 
 # Loss
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=one_hot_y, logits=logits)

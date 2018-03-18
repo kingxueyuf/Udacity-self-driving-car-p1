@@ -1,0 +1,4 @@
+traffic-signs-data/*
+*.zip
+checkpoint/*
+.ipynb_checkpoints/*
