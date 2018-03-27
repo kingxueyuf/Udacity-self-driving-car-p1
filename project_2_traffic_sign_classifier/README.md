@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 [image4]: ./test_examples/ahead_only.jpg "Traffic Sign 1"
 [image5]: ./test_examples/double_curve.jpg "Traffic Sign 2"
 [image6]: ./test_examples/no_entry.jpg "Traffic Sign 3"
-[image7]: ./test_examples/speed_limit_20km/h.jpg "Traffic Sign 4"
+[image7]: ./test_examples/speed_limit_20kmh.jpg "Traffic Sign 4"
 [image8]: ./test_examples/turn_right_ahead.jpeg "Traffic Sign 5"
 
 ## Rubric Points
