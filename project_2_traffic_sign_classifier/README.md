@@ -22,11 +22,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./test_examples/Ahead only.jpg "Traffic Sign 1"
-[image5]: ./test_examples/Double curve.jpg "Traffic Sign 2"
-[image6]: ./test_examples/No entry.jpg "Traffic Sign 3"
-[image7]: ./test_examples/Speed limit (20km/h).jpg "Traffic Sign 4"
-[image8]: ./test_examples/Turn right ahead.jpeg "Traffic Sign 5"
+[image4]: ./test_examples/ahead_only.jpg "Traffic Sign 1"
+[image5]: ./test_examples/double_curve.jpg "Traffic Sign 2"
+[image6]: ./test_examples/no_entry.jpg "Traffic Sign 3"
+[image7]: ./test_examples/speed_limit_20km/h.jpg "Traffic Sign 4"
+[image8]: ./test_examples/turn_right_ahead.jpeg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
