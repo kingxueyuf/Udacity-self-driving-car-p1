@@ -158,6 +158,15 @@ Here are five German traffic signs that I found on the web:
 <img src="./test_examples/speed_limit_20kmh.jpg" width="100">
 <img src="./test_examples/turn_right_ahead.jpeg" width="100">
 
+ahead_only.jpg image is originally 1300 x 969
+double_curve.jpg image is originally 866 x 1390
+no_entry.jpg image is originally 640 x 480
+speed_limit_20kmh.jpg image is originally 450 x 299
+turn_right_ahead.jpeg image is originally 259 x 195
+
+Which all images upon got pre-processed to resize to 32 x 32 before feed into the network
+
+
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
